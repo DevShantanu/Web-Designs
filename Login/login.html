@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*{
+				margin: 0px;
+				padding:0px;
+				box-sizing: border-box;
+			}
+		body{
+			background: url("forest.jpg");
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			
+		}
+	@media only screen and (max-width: 1150px) {
+  body {
+    	background-size:100% 720px;
+  }
+}
+		a:hover{
+			color:green;
+		}
+		nav{
+			display: flex;
+			flex-wrap: wrap; 
+
+		}
+		nav h1{
+			margin-right: auto;
+			margin-left: 10px;
+			font-size: 25;
+			color: black;
+			padding: 4px;
+			border: 2px solid lightgreen;
+		}
+		nav a{
+			text-decoration: none;
+			color: white;
+			font-size: 15px;
+			margin:0px 7px;
+
+		}
+
+		.form-box{
+			width: 380px;
+			height: 480px;
+			margin: 3% auto;
+			background: white;
+			  box-shadow:inset 0 0 10px #000000;
+			padding: 20px;
+			text-align: center;
+			position: relative;
+		}
+		input{
+			border: none;
+			border-bottom: 2px solid grey;
+			padding: 10px;
+			width: 80%;
+			height: 50px;
+			text-align: center;
+			margin: 10px 0px;
+		}
+		input:focus,button:focus {
+  			outline: none;
+		}
+		form{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		button{
+			display: block;
+			 background: linear-gradient(to right,lightblue ,lightgreen);
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 25px;
+			width: 60%;
+			margin: 15px 1px;
+			margin-top: 50px;
+			color: white;
+			cursor: pointer;
+			transition: width 0.3s;
+		}
+		button:hover{
+			background: linear-gradient(to left,lightblue ,lightgreen);
+			width: 70%;
+		}
+		#log{
+			color: lightgreen;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		.social{
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+		.social div{
+			width: 45px;
+			height: 45px;
+			border:2px solid lightblue;
+			margin:3px 15px;
+			font-size: 15px;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<div class="header">
+		
+		<nav>
+			<h1>Scary Owl</h1>
+			<a href="">Contact</a>
+			<a href="">Report</a>
+		</nav>
+	</div>
+	<div class="form-box">
+		<h1 id="log">Login</h1>
+		<div class="social">
+			<div>G</div>
+			<div>F</div>
+			<div>T</div>
+			<div>G</div>
+		</div>
+		<form method="get">
+			<input type="text" name="name" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+
+
+			<button>Log in</button>
+		</form>
+		
+		
+	</dvi>
+</body>
+</html>
